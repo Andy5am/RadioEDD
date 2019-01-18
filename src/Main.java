@@ -63,7 +63,7 @@ public class Main {
                 switch (option) {
                     case "e": radio.toggle();
                         break;
-                    case "s": radio.changeFrecuency();
+                    case "s": radio.changeFrequency();
                         break;
                     case "d":
                         boolean subirEstacion;

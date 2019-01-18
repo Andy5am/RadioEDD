@@ -3,7 +3,7 @@
  */
 public class RadioImp implements Radio {
     private boolean state;
-    private boolean frecuency;
+    private boolean frequency;
     private double station;
     private double[] buttonAM = new double[12];
     private double[] buttonFM = new double[12];
@@ -13,7 +13,7 @@ public class RadioImp implements Radio {
      */
     public RadioImp(){
         this.state = false;
-        this.frecuency = true;
+        this.frequency = true;
         this.station = 87.9;
     }
 
@@ -35,9 +35,9 @@ public class RadioImp implements Radio {
     /**
      * Este metodo cambia de AM a FM y viceversa
      */
-    public void changeFrecuency(){
-        this.frecuency = !this.frecuency;
-        if (this.frecuency) {
+    public void changeFrequency(){
+        this.frequency = !this.frequency;
+        if (this.frequency) {
             this.station = 87.9;
         } else {
             this.station = 530;
@@ -49,7 +49,7 @@ public class RadioImp implements Radio {
      * @param up
      */
     public void changeStation(boolean up){
-        if (this.frecuency){
+        if (this.frequency){
             if (up){
                 this.station = this.station + 0.2;
                 if (this.station > 107.9){
@@ -83,8 +83,8 @@ public class RadioImp implements Radio {
      * Este metodo nos devuelve si esta en AM o FM
      * @return si es AM o FM
      */
-    public boolean getFrecuency(){
-        return frecuency;
+    public boolean getFrequency(){
+        return frequency;
     }
 
     /**
@@ -92,7 +92,7 @@ public class RadioImp implements Radio {
      * @param numButton
      */
     public void saveStation(int numButton){
-        if (this.frecuency){
+        if (this.frequency){
             this.buttonFM[numButton-1] = this.station;
         }
         else {
@@ -105,7 +105,7 @@ public class RadioImp implements Radio {
      * @param numButton
      */
     public void changeStationButton(int numButton){
-        if (this.frecuency){
+        if (this.frequency){
             this.station = this.buttonFM[numButton-1];
         }
         else {
@@ -130,7 +130,7 @@ public class RadioImp implements Radio {
         String str = "";
 
         String strFre = "";
-        if (this.frecuency){
+        if (this.frequency){
             strFre = "FM";
         }else{
             strFre = "AM";
