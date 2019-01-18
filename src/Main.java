@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Main {
 
     /**
-     * Este es uno de los dos menus, este se utiliza cuando el radio empiece apagado,
-     * lo que hara es encender el radio
+     * Este es uno de los dos menus (metodo), este se utiliza cuando el radio empiece apagado,
+     * lo que hara es desplegar la opcion de poder encender el radio
      * @return
      */
     public static String menuOff(){
@@ -17,8 +17,7 @@ public class Main {
     }
 
     /**
-     * Este es el otro menu, despliega todas las tareas que puede crear el radio
-     * Ademas este tambien puede hacer que la radio se apague
+     * Este es el otro menu (metodo), despliega todas las tareas que puede hacer el radio
      * @return
      */
     public static String menuOn(){

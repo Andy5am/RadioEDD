@@ -1,7 +1,7 @@
+/**
+ *Esta es la clase que implementa los metodos de la interface
+ */
 public class RadioImp implements Radio {
-    /**
-     *Esta es la clase que implementa los metodos de la interface
-     */
     private boolean state;
     private boolean frecuency;
     private double station;
@@ -101,7 +101,7 @@ public class RadioImp implements Radio {
     }
 
     /**
-     * Este metdo hace que se guarde el boton y el boton contiene la estacion que se quiere guardar
+     * Este metodo cambia a la estacion que ya se habia guardado en un boton determinado
      * @param numButton
      */
     public void changeStationButton(int numButton){
