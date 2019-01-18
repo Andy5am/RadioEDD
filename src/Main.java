@@ -1,12 +1,26 @@
 import java.util.Scanner;
 
+/**
+ * Este es el main que contiene el ciclo el cual al ejecutarse creara el radio con las especificaciones
+ */
 public class Main {
 
+    /**
+     * Este es uno de los dos menus, este se utiliza cuando el radio empiece apagado,
+     * lo que hara es encender el radio
+     * @return
+     */
     public static String menuOff(){
         String menu = "";
         menu += "Presione e para encender el radio\n";
         return menu;
     }
+
+    /**
+     * Este es el otro menu, despliega todas las tareas que puede crear el radio
+     * Ademas este tambien puede hacer que la radio se apague
+     * @return
+     */
     public static String menuOn(){
         String menu = "";
         menu += "Presione e para apagar el radio\n";
@@ -17,6 +31,12 @@ public class Main {
         return menu;
     }
 
+    /**
+     * Este es el main donde realizara todas las tareas, como cambiar de frecuencia,
+     * subir o bajar de estacion dependiendo de la frecuencia
+     * Guardara las estaciones en los botones
+     * @param args
+     */
     public static void main (String args[]){
         Radio radio = new RadioImp();
         while (4 < 5) {
