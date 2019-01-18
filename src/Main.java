@@ -1,3 +1,10 @@
+/**
+ * El programa asimila los comportamientos de un Radio
+ * @author Andy Castillo y Cristina Bautista
+ * Carne: 18040 y 161260
+ * @version 18/01/2019
+ */
+
 import java.util.Scanner;
 
 /**
@@ -8,7 +15,7 @@ public class Main {
     /**
      * Este es uno de los dos menus (metodo), este se utiliza cuando el radio empiece apagado,
      * lo que hara es desplegar la opcion de poder encender el radio
-     * @return
+     * @return el String del menu
      */
     public static String menuOff(){
         String menu = "";
@@ -18,7 +25,7 @@ public class Main {
 
     /**
      * Este es el otro menu (metodo), despliega todas las tareas que puede hacer el radio
-     * @return
+     * @return el String del menu
      */
     public static String menuOn(){
         String menu = "";

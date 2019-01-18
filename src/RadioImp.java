@@ -26,7 +26,7 @@ public class RadioImp implements Radio {
 
     /**
      *Este metodo se devuelve si esta encendido o apagado
-     * @return
+     * @return regresa el estado
      */
     public boolean getState() {
         return state;
@@ -81,7 +81,7 @@ public class RadioImp implements Radio {
 
     /**
      * Este metodo nos devuelve si esta en AM o FM
-     * @return
+     * @return si es AM o FM
      */
     public boolean getFrecuency(){
         return frecuency;
@@ -115,7 +115,7 @@ public class RadioImp implements Radio {
 
     /**
      * Este metodo devuelve la estacion ya sea de AM o FM
-     * @return
+     * @return estacion AM o FM
      */
     public double getStation(){
         return station;
@@ -123,7 +123,7 @@ public class RadioImp implements Radio {
 
     /**
      * Este metodo que demuestra como esta conformada la radio
-     * @return
+     * @return estructura del cmd
      */
     @Override
     public String toString() {
