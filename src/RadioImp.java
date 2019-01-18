@@ -1,5 +1,7 @@
 public class RadioImp implements Radio {
-
+    /**
+     *
+     */
     private boolean state;
     private boolean frecuency;
     private double station;
@@ -15,6 +17,11 @@ public class RadioImp implements Radio {
     public void toggle(){
         this.state = !this.state;
     }
+
+    /**
+     *
+     * @return
+     */
     public boolean getState() {
         return state;
     }
@@ -26,6 +33,7 @@ public class RadioImp implements Radio {
             this.station = 530;
         }
     }
+
     public void changeStation(boolean up){
         if (this.frecuency){
             if (up){
