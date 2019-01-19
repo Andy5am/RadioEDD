@@ -6,7 +6,7 @@ public interface Radio {
     public boolean getState();
     public void changeFrequency();
     public void changeStation(boolean up);
-    public boolean getFrequency();
+    public boolean getFrecuency();
     public void saveStation(int numButton);
     public void changeStationButton(int numButton);
     public double getStation();

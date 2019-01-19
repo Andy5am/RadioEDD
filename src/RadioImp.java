@@ -83,7 +83,7 @@ public class RadioImp implements Radio {
      * Este metodo nos devuelve si esta en AM o FM
      * @return si es AM o FM
      */
-    public boolean getFrequency(){
+    public boolean getFrecuency(){
         return frequency;
     }
 
